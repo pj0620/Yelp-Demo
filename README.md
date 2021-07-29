@@ -38,3 +38,7 @@ REST API for accessing yelp reviews of the Red Oak Grille
       },
       "description": "I&apos;ve been here several times with family and enjoyed myself every outing. Service is fantastic, prompt and helpful. \nThey did temperature checks before seating us outside on the patio recently and had hand sanitizer at each table (pictured). The view is really lovely seeing the golf course and hills a few miles out.\nFood was delicious, and cooked to everyone&apos;s requests. The burger was fantastic, great quality meat and the fries were hearty and still crispy/hot. Will for sure be back, definitely worth trying out in the area!"
     }]
+
+### Scaping / API
+
+By default, uses JSoup to scrape the review data from the Red Oak Grille yelp page. By modifying com.yelp.yelp.demo.spring.ServiceConfig, it will instead use Yelp's public REST API https://www.yelp.com/developers/documentation/v3. 
