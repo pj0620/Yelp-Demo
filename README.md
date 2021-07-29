@@ -41,4 +41,9 @@ REST API for accessing yelp reviews of the Red Oak Grille
 
 ### Scaping / API
 
-By default, uses JSoup to scrape the review data from the Red Oak Grille yelp page. By modifying com.yelp.yelp.demo.spring.ServiceConfig, this code can instead use Yelp's public REST API https://www.yelp.com/developers/documentation/v3. 
+By default, uses JSoup to scrape the review data from the Red Oak Grille yelp page. By modifying the 'review.retrieve.method' property, this code can instead use Yelp's public REST API https://www.yelp.com/developers/documentation/v3. (See table)
+
+| review.retrieve.method     | description                          |
+| -------------------------- | ------------------------------------ |
+| webScrapper                | uses webscrapper to get review data  |
+| api                        | uses Yelp API to get review data     |
